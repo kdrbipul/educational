@@ -1,0 +1,362 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/*-----------------------------
+Html default formate start
+------------------------------*/
+  *{
+    margin :0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*-----------------------------
+Html default formate end
+------------------------------*/
+/*------------------------------
+nav bar left part start
+------------------------------*/
+.navabr{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+}
+.navList{
+    width:70%;
+    /* background-color:rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    
+
+}
+.navList li{
+    list-style:none;
+    padding: 25px 26px;
+
+}
+.navList li a{
+    text-decoration:none;
+    color:white;
+}
+.navList li a:hover{
+    color:lightblue;
+}
+.burger{
+    display: none;
+    position:absolute;
+    cursor: pointer;
+    right:2%;
+    top:15px;
+
+}
+.line{
+    width:33px;
+    background-color:white;
+    height:4px;
+    margin:5px 3px;
+}
+/*------------------------------
+nav bar left part end
+------------------------------*/
+/*------------------------------
+nav bar right part start
+------------------------------*/
+.rightNav{
+    text-align:right;
+    width:30%;
+    /* background-color:aqua; */
+    margin-right:25px;
+}
+.btn-sm{
+    padding:6px 15px;
+    border:2px solid white;
+    border-radius:9px;
+    font-size:16px;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+.btn-sm:hover{
+    background-color:skyblue;
+    color:white;
+    cursor: pointer;
+}
+.logo{
+    width:20%;
+    display:flex;
+    justify-content:center;
+    align-item:center;
+}
+.logo img{
+    width:33%;
+    border:2px solid white;
+    border-radius:50%;
+}
+#search{
+    padding:5px;
+    font-size:17px;
+    border: 3px solid gray;
+    border-radius:9px;
+    margin-top:5px;
+}
+
+.background{
+    background:rgba(0,0,0,0.7);
+    background-size:cover;
+    bcackground-blend-mode:darken;
+}
+.box-main{
+    display:flex;
+    justify-content:center;
+    align-item:center;
+    color:white;
+    width: 50%;
+    margin: auto;
+    height:80%;
+    
+}
+/*------------------------------
+nav bar right part end
+------------------------------*/
+/*------------------------------------
+Section part Start
+------------------------------------*/
+.firstSection{
+    height:100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.firstHalf{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.secondHalf{
+    width:50%;
+    margin-top:50px;
+}
+.secondHalf img{
+    width: 86%;
+    padding: 0 0;
+    border-radius:500px;
+    display:block;
+}
+.text-big{
+    font-size:30px;
+    text-align:justify;
+}
+.text-small{
+    font-size:16px;
+    text-align:justify;
+}
+.btn1{
+    padding: 8px 20px;
+    width: 115px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 15px;
+    justify-content: center;
+    align-items:center;
+    background:none;
+    cursor: pointer;
+    flex-direction: row;
+}
+.btn1:hover{
+    background-color: tomato;
+    color:white;
+}
+/*----------------------------
+section part end
+------------------------------*/
+.section{
+    
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+    max-width:70%;
+    margin:auto;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.thumbline img{
+    height:250px; 
+    width:350px
+}
+.paras{
+    padding:0 65px;
+}
+.section-right{
+    flex-direction:row-reverse;
+}
+.thumbline img{
+    border:2px solid gray;
+    border-radius:25px;
+    margin-top:9px;
+}
+.sectionTag{
+    padding:16px 0;
+}
+.contact{
+    margin-top:150px;
+}
+.text-center{
+    text-align:center;
+    font-size:35px;
+    padding:5px 0;
+    margin:20px 0;
+}
+.form{
+    max-width: 62%;
+    margin:auto;
+}
+.form input,textarea{
+    width:100%;
+    padding:5px;
+    font-size:18px;
+    border:2px solid black;
+    border-radius:8px;
+    margin:16px 0;
+}
+.btn-dark{
+    padding:5px 5px;
+    font-size:18px;
+    border:2px solid gray;
+    border-radius:6px;
+    color:black;
+}
+.btn-dark:hover{
+    background-color: tomato;
+    color:white;
+    cursor: pointer;
+
+}
+.text-footer{
+    text-align:center;
+    /* font-size:35px; */
+    padding:10px 0;
+    margin-top: 60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.n-btn{
+    clear: both;
+}
+
+      
+
+[id*=-error]{
+    color:black;
+    
+}
+.to-top{
+    background:gray;
+    position:fixed;
+    bottom:10px;
+    right:25px;
+    width:50px;
+    height:50px;
+    border-radius:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:32px;
+    color:white;
+    text-decoration:none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+
+}
+.to-top.active{
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
+
+
+/* ------------------------------
+    Media Query
+-------------------------------*/
+
+@media (max-width:1094px) {
+    htmL{
+        width:100%;
+    }
+    .navList{
+        flex-direction: column;
+    }
+    .navabr{
+        height:500px;
+        flex-direction: column;
+        transition: all 0.9s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+        
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .section{
+        flex-direction: column;
+    }
+    #search{
+        width:100%;
+    }
+    .burger{
+        display: block;
+        opacity:0.7;
+    }
+    .burger:hover{
+        opacity:2;
+        
+    }
+    .btn-sm{
+        margin-top:8px;
+    }
+    .h-nav-resp{
+        height:72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .thumbline img {
+        margin:5px 0;
+    }
+    
+    .buttons{
+        text-align:center;
+    }
+    .paras{
+        padding:0px;
+    }
+}
+@media(max-width:576px){
+    .text-big{
+        font-size: 14px;
+    }
+    .text-small{
+        font-size: 12px;
+    }
+    .secondHalf img{
+        height:120px;
+        width:120px;
+    }
+    .firstHalf{
+        margin-top:-7px;
+    }
+    .buttons{
+        margin-top:-7px;
+    }
+}
